@@ -1,0 +1,850 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>Start X Comp</title>
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://code.jquery.com">
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="preconnect" href="https://code.jquery.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Style Files -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.3/build/css/intlTelInput.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/master.css?v=1644831271">
+  </head>
+  <body>
+    <nav id="menu">
+  <div class="container-fluid">
+    <a href="#" class="logo">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 154.65 70.41" style="enable-background:new 0 0 154.65 70.41;" xml:space="preserve">
+      <style type="text/css">
+        .st0{fill:#1A1818;transition: ease all 0.5s;}
+        .st1{fill:url(#Path_7_00000152243589367120229520000009749077052505959592_);}
+        .st2{fill:url(#SVGID_1_);}
+        .st3{fill:url(#SVGID_00000160900859835095465630000006782741770314593691_);}
+      </style>
+      <g>
+        <path id="Path_1_00000120530793773627166590000006245443601925573024_" class="st0" d="M6.34,69.74C4.15,69.25,2.02,68.51,0,67.53
+          v-7.36c2.02,1.16,4.18,2.03,6.43,2.6c2.24,0.55,4.54,0.82,6.85,0.81c3.39,0,5.09-1.22,5.09-3.65c0.07-0.86-0.25-1.7-0.87-2.3
+          c-0.81-0.6-1.74-1.02-2.72-1.23l-4.91-1.08c-2.59-0.44-5-1.59-6.98-3.32c-1.67-1.78-2.52-4.18-2.36-6.61
+          c0-6.94,4.33-10.42,12.99-10.42c3.91,0.02,7.78,0.75,11.43,2.15v7.06c-1.62-0.77-3.33-1.35-5.09-1.74
+          c-1.96-0.44-3.97-0.66-5.99-0.66c-3.47,0-5.21,1.04-5.21,3.11c-0.07,0.8,0.25,1.58,0.87,2.1c0.79,0.53,1.67,0.9,2.6,1.08L17,49.15
+          c2.66,0.48,5.14,1.65,7.18,3.41c1.56,1.52,2.33,3.85,2.33,7c0,3.55-1.2,6.25-3.59,8.08c-2.39,1.83-5.61,2.76-9.64,2.76
+          C10.96,70.43,8.63,70.21,6.34,69.74z"/>
+        <path id="Path_2_00000009548467526291555100000009273198126173598849_" class="st0" d="M41.46,43.94v15.14
+          c-0.1,1.05,0.15,2.1,0.72,2.99c0.72,0.65,1.68,0.95,2.63,0.84c1.23,0.01,2.46-0.16,3.65-0.48v7c-1.85,0.43-3.73,0.67-5.63,0.72
+          c-3.31,0-5.71-0.7-7.18-2.1s-2.21-3.56-2.21-6.46V43.94h-4.43V36.7h4.43V25.33h8.02V36.7h7.66v7.24L41.46,43.94z"/>
+        <path id="Path_3_00000071522269670189168470000012345829155630920114_" class="st0" d="M75.16,38.46c1.91,1.01,3.37,2.7,4.1,4.73
+          c0.7,2.15,1.01,4.41,0.9,6.68v20.16h-8.02v-3.7c-1.27,1.22-2.74,2.21-4.34,2.93c-4.43,1.74-9.45,0.92-13.11-2.12
+          c-2.2-2.18-3.37-5.2-3.2-8.29c0-3.59,1.11-6.37,3.32-8.35c2.21-1.98,5.26-2.96,9.13-2.96c2.84-0.07,5.66,0.57,8.2,1.86
+          c0.05-0.94-0.11-1.89-0.46-2.76c-0.35-0.97-1.07-1.77-1.99-2.23c-1-0.5-2.43-0.45-4.39-0.45h-5.67V36.7h6.53
+          C70.1,36.7,73.1,37.29,75.16,38.46z M72.13,60.4v-5.27c-2.01-1.05-4.25-1.61-6.52-1.62c-1.53-0.07-3.04,0.36-4.31,1.23
+          c-1.19,0.97-1.81,2.46-1.68,3.98c-0.14,1.43,0.38,2.85,1.41,3.86c1.01,0.8,2.27,1.22,3.56,1.17C67.02,63.76,69.54,62.64,72.13,60.4
+          L72.13,60.4z"/>
+        <path id="Path_4_00000041269998218626217050000014799446777028512945_" class="st0" d="M103.02,36.7v7.18h-1.38
+          c-3.54,0.1-6.94,1.41-9.64,3.71v22.57h-8.02V36.7H92v4.07c3.07-2.71,6.29-4.07,9.64-4.07H103.02z"/>
+        <path id="Path_5_00000119087167345902597470000005819227184384855190_" class="st0" d="M119.3,43.94v15.14
+          c-0.1,1.05,0.15,2.1,0.72,2.99c0.72,0.65,1.68,0.95,2.63,0.84c1.23,0.01,2.46-0.16,3.65-0.48v7c-1.85,0.43-3.73,0.67-5.63,0.72
+          c-3.31,0-5.71-0.7-7.18-2.1c-1.48-1.4-2.21-3.55-2.21-6.46V43.94h-4.43V36.7h4.43V25.33h8.02V36.7h7.66v7.24L119.3,43.94z"/>
+
+          <linearGradient id="Path_7_00000025445111197484625590000004855578219755301566_" gradientUnits="userSpaceOnUse" x1="-211.8008" y1="443.882" x2="-210.9986" y2="444.6821" gradientTransform="matrix(29.323 0 0 -29.413 6338.8584 13082.376)">
+          <stop  offset="0" style="stop-color:#329DD8"/>
+          <stop  offset="0.999" style="stop-color:#89BC40"/>
+        </linearGradient>
+
+          <path id="Path_7_00000045614657068247162640000008497050205004798358_" style="fill:url(#Path_7_00000025445111197484625590000004855578219755301566_);" d="
+          M125.32,23.5L148.82,0l5.82,5.92l-23.5,23.5L125.32,23.5z"/>
+        <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="128.2108" y1="2.9436" x2="136.3625" y2="11.075">
+          <stop  offset="0" style="stop-color:#EA4324"/>
+          <stop  offset="0.4928" style="stop-color:#ED5527"/>
+          <stop  offset="1" style="stop-color:#F26A2D"/>
+        </linearGradient>
+        <polygon class="st2" points="133.42,14.01 139.29,8.14 131.15,0 125.32,5.92 133.42,14.01 	"/>
+
+          <linearGradient id="SVGID_00000013903850551104789050000004165067841072055716_" gradientUnits="userSpaceOnUse" x1="143.61" y1="18.3411" x2="151.7594" y2="26.4702">
+          <stop  offset="0" style="stop-color:#EE6F23"/>
+          <stop  offset="1" style="stop-color:#F99C2E"/>
+        </linearGradient>
+        <polygon style="fill:url(#SVGID_00000013903850551104789050000004165067841072055716_);" points="146.55,15.41 140.68,21.27
+          140.68,21.27 148.82,29.41 154.65,23.5 	"/>
+      </g>
+      </svg>
+    </a>
+    <img src="assets/img/icon-menu.svg" class="mobile">
+    <div class="mobileBox">
+      <ul class="menu">
+        <li><a href="#welcome" class="active">welcome</a></li>
+        <li><a href="#services">services</a></li>
+        <li><a href="#faq">faq</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#company">company</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+      <div class="right">
+        <a href="#en">en</a>
+        <a href="#de">de</a>
+        <a href="#startaproject" class="startaproject">start a project</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<header id="welcome">
+  <div class="body">
+    <div class="text">
+      <h3>Tell us about your project dreams.</h3>
+      <h2>Let’s make it <span>real.</span>  </h2>
+      <p>A team of digital natives with proven records across SaaS,  ecommerce, insurance, and high-tech industries.</p>
+      <div class="ripple">
+        <a href="#startaproject" class="startaproject">
+          <b>Start</b>
+          your project now
+          <img src="assets/img/icon-down.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="bgImage">
+    <img src="assets/img/welcome-left.png" class="left">
+    <img src="assets/img/welcome-bottom.png" class="bottom">
+    <img src="assets/img/welcome-right.png" class="right">
+  </div>
+</header>
+<section id="services">
+  <div class="title">
+    <h2>Services</h2>
+    <h2>Services</h2>
+  </div>
+  <div class="swiper slider">
+    <div class="swiper-wrapper">
+            <div class="item swiper-slide" style="border-color:#00A1ED;" data-color-1="#00A1ED" data-color-2="#8ABB2A">
+        <div class="content" >
+            <div class="image">
+              <img src="assets/img/icon-software.svg" alt="">
+            </div>
+            <h4 style="color:#00A1ED;">Software</h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </p>
+            <a href="service.html" class="popupMore" style="background-color:#00A1ED;">Read More</a>
+        </div>
+        <div class="bg" style="background-color:#00A1ED;"></div>
+      </div>
+            <div class="item swiper-slide" style="border-color:#FE9D2B;" data-color-1="#FE9D2B" data-color-2="#dc3545">
+        <div class="content" >
+            <div class="image">
+              <img src="assets/img/icon-software.svg" alt="">
+            </div>
+            <h4 style="color:#FE9D2B;">Software</h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </p>
+            <a href="service.html" class="popupMore" style="background-color:#FE9D2B;">Read More</a>
+        </div>
+        <div class="bg" style="background-color:#FE9D2B;"></div>
+      </div>
+            <div class="item swiper-slide" style="border-color:#EC411B;" data-color-1="#EC411B" data-color-2="#FE9D2B">
+        <div class="content" >
+            <div class="image">
+              <img src="assets/img/icon-software.svg" alt="">
+            </div>
+            <h4 style="color:#EC411B;">Software</h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </p>
+            <a href="service.html" class="popupMore" style="background-color:#EC411B;">Read More</a>
+        </div>
+        <div class="bg" style="background-color:#EC411B;"></div>
+      </div>
+            <div class="item swiper-slide" style="border-color:#549ecd;" data-color-1="#549ecd" data-color-2="#0e3b4c">
+        <div class="content" >
+            <div class="image">
+              <img src="assets/img/icon-software.svg" alt="">
+            </div>
+            <h4 style="color:#549ecd;">Software</h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </p>
+            <a href="service.html" class="popupMore" style="background-color:#549ecd;">Read More</a>
+        </div>
+        <div class="bg" style="background-color:#549ecd;"></div>
+      </div>
+            <div class="item swiper-slide" style="border-color:#8ABB2A;" data-color-1="#8ABB2A" data-color-2="#198754">
+        <div class="content" >
+            <div class="image">
+              <img src="assets/img/icon-software.svg" alt="">
+            </div>
+            <h4 style="color:#8ABB2A;">Software</h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </p>
+            <a href="service.html" class="popupMore" style="background-color:#8ABB2A;">Read More</a>
+        </div>
+        <div class="bg" style="background-color:#8ABB2A;"></div>
+      </div>
+          </div>
+    <div class="swiper-pagination"></div>
+    <div class="prev swiper-button-prev"></div>
+    <div class="next swiper-button-next"></div>
+  </div>
+  <div class="line">  </div>
+</section>
+<section id="howWeWork">
+  <div class="boxs">
+    <div>
+      <div class="text">
+        <div class="title sticky">
+          <h2>How We Work</h2>
+          <h2>How We Work</h2>
+        </div>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </p>
+      </div>
+    </div>
+    <div>
+      <ul>
+                <li>
+          <span>1</span>
+          <h5>Title</h5>
+          <div class="body">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          </div>
+        </li>
+                <li>
+          <span>2</span>
+          <h5>Title</h5>
+          <div class="body">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          </div>
+        </li>
+                <li>
+          <span>3</span>
+          <h5>Title</h5>
+          <div class="body">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          </div>
+        </li>
+                <li>
+          <span>4</span>
+          <h5>Title</h5>
+          <div class="body">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          </div>
+        </li>
+                <li>
+          <span>5</span>
+          <h5>Title</h5>
+          <div class="body">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          </div>
+        </li>
+              </ul>
+    </div>
+  </div>
+  <div class="rippleBox">
+    <div class="ripple">
+      <a href="#startaproject" class="startaproject">
+        <img src="assets/img/icon-flag.svg" alt="">
+        <b>PUBLISHING</b>
+        <span>Start a Project</span>
+      </a>
+    </div>
+  </div>
+</section>
+<section id="articles">
+  <div class="title sticky">
+    <h2>Things To Know</h2>
+    <h2>Things To Know</h2>
+  </div>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+            <div class="item swiper-slide">
+        <img src="https://dummyimage.com/100x100/eee/aaa" alt="" width="100%;">
+        <div>
+          <h4>Financial Solutions</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          <a href="financial-solutions.html" class="popupMore">Read More</a>
+        </div>
+      </div>
+            <div class="item swiper-slide">
+        <img src="https://dummyimage.com/100x100/eee/aaa" alt="" width="100%;">
+        <div>
+          <h4>Financial Solutions</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          <a href="financial-solutions.html" class="popupMore">Read More</a>
+        </div>
+      </div>
+            <div class="item swiper-slide">
+        <img src="https://dummyimage.com/100x100/eee/aaa" alt="" width="100%;">
+        <div>
+          <h4>Financial Solutions</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          <a href="financial-solutions.html" class="popupMore">Read More</a>
+        </div>
+      </div>
+            <div class="item swiper-slide">
+        <img src="https://dummyimage.com/100x100/eee/aaa" alt="" width="100%;">
+        <div>
+          <h4>Financial Solutions</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          <a href="financial-solutions.html" class="popupMore">Read More</a>
+        </div>
+      </div>
+            <div class="item swiper-slide">
+        <img src="https://dummyimage.com/100x100/eee/aaa" alt="" width="100%;">
+        <div>
+          <h4>Financial Solutions</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          <a href="financial-solutions.html" class="popupMore">Read More</a>
+        </div>
+      </div>
+          </div>
+    <div class="swiper-pagination"></div>
+    <div class="prev swiper-button-prev"></div>
+    <div class="next swiper-button-next"></div>
+  </div>
+</section>
+<section id="popup">
+  <img src="assets/img/logo.svg" class="logo">
+  <div class="exit btn btn-dark">X CLOSE</div>
+  <div class="result"> </div>
+</section>
+<section id="faq">
+  <div class="container">
+    <h1>Frequently Asked Questions</h1>
+    <ul class="accordion">
+      <li>
+        <h3><span>Why is the moon sometimes out during the day?</span></h3>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.
+        </div>
+      </li>
+      <li>
+        <h3><span>Why is the sky blue?</span></h3>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.
+        </div>
+      </li>
+      <li>
+        <h3><span>Will we ever discover aliens?</span></h3>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.
+        </div>
+      </li>
+      <li>
+        <h3><span>How much does the Earth weigh?</span></h3>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.
+        </div>
+      </li>
+      <li>
+        <h3><span>How do airplanes stay up?</span></h3>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<section id="projects">
+  <div class="head">
+    <div class="title sticky">
+      <h2>Projects</h2>
+      <h2>Projects</h2>
+    </div>
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    </p>
+    <div class="links">
+      <a href="#">Ui design</a>
+      <a href="#">ux design</a>
+      <a href="#">website  development</a>
+      <a href="#">mobile development</a>
+      <a href="#">performans</a>
+    </div>
+  </div>
+  <ul class="items">
+    <li><div><a href="project.html" class="popupMore"><img src="https://dummyimage.com/360x640/eee/aaa"></a></div></li>
+    <li><div><a href="project.html" class="popupMore"><img src="https://dummyimage.com/480x720/eee/aaa"></a></div></li>
+    <li><div><a href="project.html" class="popupMore"><img src="https://dummyimage.com/480x640/eee/aaa"></a></div></li>
+    <li><div><a href="project.html" class="popupMore"><img src="https://dummyimage.com/360x520/eee/aaa"></a></div></li>
+    <li><div><a href="project.html" class="popupMore"><img src="https://dummyimage.com/520x360/eee/aaa"></a></div></li>
+    <li><div><a href="project.html" class="popupMore"><img src="https://dummyimage.com/720x640/eee/aaa"></a></div></li>
+  </ul>
+  <div class="rippleBox">
+    <div class="ripple">
+      <div class="add">
+        <b>LOAD MORE</b>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="company">
+  <div>
+    <div class="title sticky">
+      <h2>Company</h2>
+      <h2>Company</h2>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur dolor purus, fringilla dignissim dolor ullamcorper ut. Duis feugiat maximus justo a elementum. Sed pharetra cursus diam, rutrum pharetra massa rhoncus in. Proin dapibus nisi vitae purus semper vehicula. Proin vel malesuada risus. Nunc semper dui tincidunt nibh condimentum interdum. Sed risus nibh, sollicitudin a nisi in, fringilla tristique metus. Phasellus non urna non magna condimentum sagittis. Maecenas in ullamcorper nunc. Cras pulvinar ipsum quis luctus accumsan. Donec a ligula tristique, vestibulum enim at, laoreet ante. Pellentesque dignissim sem a est malesuada, nec molestie ex convallis. Sed aliquam iaculis lectus, eget tempus risus.
+    </p>
+    <p>
+      Suspendisse consectetur lorem ligula, vel mattis purus pharetra sit amet. Quisque sed pretium enim, ac vulputate urna. Vivamus in lacus ipsum. Duis eleifend risus pellentesque velit vehicula, et luctus augue cursus. Praesent risus nibh, facilisis non quam et, ultricies volutpat tortor. Maecenas rhoncus erat lorem, quis accumsan odio porta et. Duis eget laoreet arcu, et auctor mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed non eros vulputate, elementum nulla non, vulputate lectus. Nulla facilisi. Suspendisse non quam porta, bibendum arcu non, varius urna. Ut consectetur consectetur commodo. În bibendum, velit id viverra mollis, sapien tellus efficitur metus, elementum scelerisque dui risus at nunc. Ut blandit sodales viverra. Integer in neque purus.
+    </p>
+    <div class="links">
+      <a href="#">Read More</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </div>
+  <div>
+    <div class="image">
+      <span>
+      </span>
+      <img src="https://dummyimage.com/400x250/eee/aaa" alt="">
+    </div>
+  </div>
+</section>
+<section id="logosHead">
+  <div class="title">
+    <h2>We make their work really work.</h2>
+    <h2>We make their work really work.</h2>
+  </div>
+  <p>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+  </p>
+</section>
+<section id="logos">
+    <div class="box one">
+      <div class="items">
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                  </div>
+      </div>
+    </div>
+    <div class="box two">
+      <div class="items">
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                  </div>
+      </div>
+    </div>
+    <div class="box three">
+      <div class="items">
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                        <div class="item" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/de/AsusTek-black-logo.png)"> </div>
+                  </div>
+      </div>
+    </div>
+</section>
+<footer id="contact">
+  <div>
+
+    <div class="info">
+      <a href="tel:+94842365506">
+        <img src="assets/img/icon-phone.svg" alt="">
+        <div>
+          <span>Call us now </span>
+          <b>+948 4 2365506</b>
+        </div>
+      </a>
+      <a href="tel:+94842365506">
+        <img src="assets/img/icon-whatsapp.svg" alt="">
+        <div>
+          <span>Send message with Whatsapp now</span>
+          <b>+948 4 2365506</b>
+        </div>
+      </a>
+      <a href="tel:+94842365506">
+        <img src="assets/img/icon-mail.svg" alt="">
+        <div>
+          <span>Contact us</span>
+          <b>info@startxcomp.com</b>
+        </div>
+      </a>
+      <a href="tel:+94842365506">
+        <img src="assets/img/icon-map.svg" alt="">
+        <div>
+          <span>Address</span>
+          <b>Highton / Avutralia</b>
+        </div>
+      </a>
+    </div>
+    <div class="links">
+      <ul>
+        <li><a href="#welcome" class="active">Welcome</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#clients">Clients</a></li>
+        <li><a href="#company">Company</a></li>
+        <li><a href="#contactus">Contact Us</a></li>
+        <li><a href="#createProject">Create Project</a></li>
+        <li><a href="#myCompany">My company structure</a></li>
+        <li><a href="#appPage">Apply Page</a></li>
+        <li><a href="#ourTechStackPage">Our tech stack page</a></li>
+        <li><a href="#philosophyPage">Philosophy page</a></li>
+      </ul>
+    </div>
+  </div>
+  <div>
+    <div>
+      StartXComp © 2021. All rights reserved.
+    </div>
+    <div>
+      Scroll Up
+    </div>
+  </div>
+</footer>
+<section id="startProjectModal">
+  <span class="exit ">Close <img src="assets/img/icon-times.svg"></span>
+  <div>
+    <div>
+      <form class="" action="index.html" method="post">
+        <div class="steps">
+          <div>
+            <div class="head">
+              <h3>Contact Information</h3>
+              <p>Information necessary for us to communicate with you more quickly.</p>
+            </div>
+            <div class="body">
+              <div class="field">
+                <label>Your name</label>
+                <input type="text" name="name" class="form-control" required>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="field">
+                    <label>Your telephone number</label>
+                    <input type="number" name="phone" id="phone" class="form-control" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="field">
+                    <label>E-Mail Address</label>
+                    <input type="mail" name="mail" class="form-control" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="head">
+              <h3>Service Selection</h3>
+              <p>You can choose the services we can assist you at this step.</p>
+            </div>
+            <div class="body">
+              <label>Which services do you want to take advantage of?</label>
+              <div class="checkList">
+                                  <label class="checkbox">
+                    <input name="services" class="form-check-input me-1" type="checkbox" value="UI Design">
+                    UI Design                  </label>
+                                    <label class="checkbox">
+                    <input name="services" class="form-check-input me-1" type="checkbox" value="Developing Proof of Content">
+                    Developing Proof of Content                  </label>
+                                    <label class="checkbox">
+                    <input name="services" class="form-check-input me-1" type="checkbox" value="App Development">
+                    App Development                  </label>
+                                    <label class="checkbox">
+                    <input name="services" class="form-check-input me-1" type="checkbox" value="UX Design">
+                    UX Design                  </label>
+                                    <label class="checkbox">
+                    <input name="services" class="form-check-input me-1" type="checkbox" value="MVP (Minimum Viable Product)">
+                    MVP (Minimum Viable Product)                  </label>
+                                    <label class="checkbox">
+                    <input name="services" class="form-check-input me-1" type="checkbox" value="Web Development">
+                    Web Development                  </label>
+
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="head">
+              <h3>Brief</h3>
+              <p>You can share information about your project with us in this area.</p>
+            </div>
+            <div class="body">
+              <div class="field">
+                <label>Project Name</label>
+                <input type="text" name="projectName" class="form-control" required>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="field">
+                    <label>How many are you in the project?</label>
+                    <input type="number" min="1" name="people" class="form-control"  required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="field">
+                    <label>What is your role</label>
+                    <input type="text" name="roles" class="form-control" required>
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+                <label>Tell Your Project</label>
+                <textarea type="text" name="projectDescription" class="form-control" rows="8" required></textarea>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="head">
+              <h3>Pricing</h3>
+              <p>You can make price adjustments in this area.</p>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="body">
+                  <div class="field">
+                    <label>Budget</label>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    <input name="budget" type="range" min="0" max="100000" step="1"  value="0" required/>
+                    <div id="budgetResult">€ <span>0</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="body">
+                  <div class="field">
+                    <label>Equity</label>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    <input name="equity" type="range" min="0" max="100" step="1" value="0"  required/>
+                    <div id="equityResult">% <span>0</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="head">
+              <h3>Calendar</h3>
+              <p>You can make date selections from this field.</p>
+            </div>
+            <div class="body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="field">
+                    <label>Delivery Date</label>
+                    <input type="date" name="deliveryDate" class="form-control" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="field">
+                  <label>When would you like to have a meeting?</label>
+                  <input type="date" name="meetingDate" class="form-control" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="head">
+              <h3>Preview</h3>
+              <p>You can check the information you have filled in from this area.</p>
+            </div>
+            <div class="body result">
+              <div class="row">
+                <div class="col-md-4">
+                  <h5>Name</h5>
+                  <p class="DATAname"></p>
+                </div>
+                <div class="col-md-4">
+                  <h5>Phone</h5>
+                  <p class="DATAphone"></p>
+                </div>
+                <div class="col-md-4">
+                  <h5>Email</h5>
+                  <p class="DATAmail"></p>
+                </div>
+                <div class="col-md-12">
+                  <h5>Project Name</h5>
+                  <p class="DATAprojectName"></p>
+                </div>
+                <div class="col-md-12">
+                  <h5>Project Description</h5>
+                  <p class="DATAprojectDescription"></p>
+                </div>
+                <div class="col-md-12">
+                  <h5>Services</h5>
+                  <p class="DATAservices"></p>
+                </div>
+                <div class="col-md-12">
+                  <h5>Number of Persons</h5>
+                  <p class="DATApeople"></p>
+                </div>
+                <div class="col-md-12">
+                  <h5>Roles</h5>
+                  <p class="DATAroles"></p>
+                </div>
+                <div class="col-md-3">
+                  <h5>Delivery Date</h5>
+                  <p class="DATAdeliveryDate"></p>
+                </div>
+                <div class="col-md-3">
+                  <h5>Meeting Date</h5>
+                  <p class="DATAmeetingDate"></p>
+                </div>
+                <div class="col-md-3">
+                  <h5>Budget</h5>
+                  <p class="DATAbudget"></p>
+                </div>
+                <div class="col-md-3">
+                  <h5>Quaity</h5>
+                  <p class="DATAequity"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="head">
+              <h3>Result</h3>
+              <p>Transaction Result</p>
+            </div>
+            <div class="body">
+              <h3>Success</h3>
+              <p>Your project information has been sent successfully. We will contact you as soon as possible.</p>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <ul class="icons" data-index="0">
+            <li class="active"><span data-tooltip="Başlık"><img src="assets/img/icon-user.svg"></span></li>
+            <li><span data-tooltip="Başlık"><img src="assets/img/icon-work.svg"></span></li>
+            <li><span data-tooltip="Başlık"><img src="assets/img/icon-document.svg"></span></li>
+            <li><span data-tooltip="Başlık"><img src="assets/img/icon-wallet.svg"></span></li>
+            <li><span data-tooltip="Başlık"><img src="assets/img/icon-calendar.svg"></span></li>
+            <li><span data-tooltip="Başlık"><img src="assets/img/icon-sheld-done.svg"></span></li>
+          </ul>
+          <div class="buttons">
+            <span class="prev"><img src="assets/img/icon-arrow-left.svg"> Prev</span>
+            <span class="next">Next <img src="assets/img/icon-arrow-right.svg"> </span>
+            <span class="send">Send <img src="assets/img/icon-send.svg"></span>
+            <span class="close">Close <img src="assets/img/icon-close.svg"></span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <span class="index">0</span>
+  <img src="assets/img/logo.svg" class="logo">
+  <p class="backTitle">Start a Project</p>
+</section>
+    <!-- JavsScript Files -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.3/build/js/intlTelInput.js"></script>
+    <script src="assets/js/services-slider.js?v=1644831271"></script>
+    <script src="assets/js/welcome.js?v=1644831271"></script>
+    <script src="assets/js/logos.js?v=1644831271"></script>
+    <script src="assets/js/articles.js?v=1644831271"></script>
+    <script src="assets/js/company.js?v=1644831271"></script>
+    <script src="assets/js/how-we-work.js?v=1644831271"></script>
+    <script src="assets/js/popup.js?v=1644831271"></script>
+    <script src="assets/js/masonry.js?v=1644831271"></script>
+    <script src="assets/js/faq.js?v=1644831271"></script>
+    <script src="assets/js/projects.js?v=1644831271" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/startProjectModal.js?v=1644831271" charset="utf-8"></script>
+    <script src="assets/js/master.js?v=1644831271" charset="utf-8"></script>
+    <section id="pageLoader" class="preloader-wrap">
+  <div>
+    <div>
+      <img class="logo" src="assets/img/logo.svg" alt="">
+      <div class="percent">LOADING <span>0</span>%</div>
+      <div class="bar">
+        <span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+var width = 100,
+    perfData = window.performance.timing,
+    EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
+    time = parseInt((EstimatedTime/1000)%60)*100;
+    // Loadbar Glow Animation
+    $("#pageLoader .bar span").animate({
+      width: width + "%"
+    }, time);
+
+// Percentage Increment Animation
+var PercentageID = $("#pageLoader .percent span"),
+    start = 0,
+    end = 100,
+    durataion = time;
+    animateValue(PercentageID, start, end, durataion);
+
+function animateValue(id, start, end, duration) {
+
+  var range = end - start,
+      current = start,
+      increment = end > start? 1 : -1,
+      stepTime = Math.abs(Math.floor(duration / range)),
+      obj = $(id);
+
+  var timer = setInterval(function() {
+    current += increment;
+    $(obj).text(current);
+      //obj.innerHTML = current;
+    if (current == end) {
+      clearInterval(timer);
+    }
+  }, stepTime);
+}
+// Fading Out Loadbar on Finised
+setTimeout(function(){
+  $('#pageLoader').fadeOut(300);
+}, time);
+</script>
+  </body>
+</html>
