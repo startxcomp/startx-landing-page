@@ -23,6 +23,8 @@ body{ }
 #menu .menu li a{text-decoration: none;color:var(--black);padding:27px;display:block;transition: ease all 0.5s;}
 #menu .right{float:right;}
 #menu .right a{display: inline-block;padding: 27px 27px 27px 0;text-decoration: none;color:black;}
+#menu .mobileBox .right a:first-child,
+#menu .mobileBox .right a:nth-child(2) { visibility: hidden; }
 #menu .right a.startaproject{background: rgb(0,161,237);background: linear-gradient(270deg, var(--blue) 0%, var(--green) 100%);border-radius: 25px;opacity: 1;padding: 10px 20px;color:white;text-decoration: none;}
 #menu.active{box-shadow:0 0 60px rgb(54 162 228 / 14%);background-color: white;}
 #menu.footer{background-color: var(--black);box-shadow:0 0 60px rgb(0 0 0 / 90%);}
@@ -50,7 +52,7 @@ body{ }
 #welcome .bgImage .bottom{bottom: 10%;right: 55%;}
 /* Ripple Animation */
 .ripple {display: inline-block;margin: auto;width: auto;height: auto;background-color: white;border-radius: 100%;position: relative;}
-.ripple::before,.ripple::after {content: "";position: absolute;top: 0;left: 0;right: 0;bottom: 0;border-radius: 100%;background-color: white;animation: ripple 3s linear infinite 1s;box-shadow: 0 0 30px  rgba(54  162  228 / 15%);transform: scale(0);}
+.ripple::before,.ripple::after {content: "";position: absolute;top: 0;left: 0;right: 0;bottom: 0;border-radius: 100%;background-color: #fcfcfc;animation: ripple 3s linear infinite 1s;box-shadow: 0 0 30px  rgba(54  162  228 / 15%);transform: scale(0);}
 .ripple::after {animation: ripple 3s linear infinite 2s}
 @keyframes ripple {0% {transform: scale(0);}100% {transform: scale(3);opacity: 0;}}
 /* How We Work */
@@ -153,7 +155,7 @@ body{ }
 #popup.active:after{content:' ';display: block;position: fixed;top:0;left:0;right: 0;height: 95px; background-color: white;z-index: 2;box-shadow:0 0 60px rgb(54 162 228 / 14%);}
 /* Company */
 #company{display: flex;position: relative;z-index: 1;padding-bottom: 100px;}
-#company .title{font-size: 120px;position: relative;}
+#company .title{font-size: 120px;position: relative; margin-bottom: 25px;}
 #company .title h2:first-child,
 #company .title h2:last-child{display: block;font-size: 120px;margin: auto;text-align: center;}
 #company .title h2:first-child{ opacity: 0.2;left: 0vw;color:white;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;}
@@ -200,10 +202,9 @@ body{ }
 #contact .info a div span{display: block;font-size: 16px;}
 #contact .info a div b{font-size: 25px;font-weight: normal;transition: ease all 0.5s;}
 #contact .info a div b:hover{color:Var(--yellow);}
-#contact .links{ }
 #contact .links ul,
 #contact .links ul li{list-style: none;margin: 0;padding: 0;}
-#contact .links ul{column-count: 2;width: 100%;}
+#contact .links ul{column-count: 1;width: 100%;}
 #contact .links ul li{padding-bottom: 15px;}
 #contact .links ul li a{font-size: 25px;transition: ease all 0.5s;}
 #contact .links ul li a:hover{color:Var(--yellow);}
@@ -240,12 +241,14 @@ body{ }
 #startProjectModal .icons li:last-child:after{display: none;}
 #startProjectModal .bottom{padding-top: 30px;}
 #startProjectModal .bottom:after{content:' ';display: block;clear: both;}
-#startProjectModal .buttons{float:right;}
+#startProjectModal .buttons{float:right; display: flex; gap: 15px; align-items: center;}
 #startProjectModal .buttons>*{cursor: pointer;}
 #startProjectModal .steps>div{display: none;}
 #startProjectModal input[type="checkbox"]{width: 23px;height:  23px;}
 #startProjectModal input[type="range"]{width: 100%; }
 #startProjectModal .field>p{font-size: 14px;margin: 15px 0;}
+#startProjectModal .field .contact-types { display: flex; gap: 20px; align-items: center; }
+#startProjectModal .field .contact-types input { margin: 0; }
 #startProjectModal .checkList{columns: 2;column-gap: 30px;margin-top: 20px;}
 #startProjectModal .checkList .checkbox{margin-bottom: 15px;}
 #startProjectModal .index{display: none;}
@@ -285,6 +288,7 @@ body{ }
 #services .swiper-button-prev{ padding:0 5% 0 3%; left:0;background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0) 100%); }
 #services .swiper-button-next{ padding:0 3% 0 5%; right: 0;background: linear-gradient(-90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0) 100%); }
 
+label span { color: red }
 
 .swal2-container{z-index: 99999999999999 !important;}
 /* Input Range */
@@ -316,12 +320,13 @@ input[type=range]::-webkit-slider-runnable-track,input[type=range]::-moz-range-t
    #menu .menu li{display: block;margin: 0;padding: 0;list-style: none;}
    #menu .menu li a{text-align: center;display: block;padding: 15px;width: 100%;background-color: white;}
    #menu .menu li:last-child a{padding-bottom: 30px;}
+   .startaproject img { margin-top: 10px!important; }
    #welcome{overflow: initial;min-height: auto;padding-bottom: 350px;position: relative;}
    #welcome .text h3{font-size: 22px;}
    #welcome .text h2{font-size: 47px;}
    #welcome .text p{font-size: 16px;width: 80%;margin: auto;}
-   #welcome .bgImage .right{max-height: 25%;}
-   #welcome .bgImage .left{max-height:30%;}
+   #welcome .bgImage .right{max-height: 25%; top: 50px;}
+   #welcome .bgImage .left{max-height:30%; top: 50px;}
    #welcome .bgImage .bottom{max-height:30px;}
    #welcome .ripple{width: 400px;position: absolute;left: 0;right: 0;}
    #welcome .ripple::before, #welcome .ripple::after {width: 400px;height: 400px;margin: auto;}
@@ -342,7 +347,7 @@ input[type=range]::-webkit-slider-runnable-track,input[type=range]::-moz-range-t
    #pageLoader .percent span{width: 47px;}
    #howWeWork{padding-top: 50px;}
    #howWeWork .boxs{display: block;}
-   #howWeWork .text{width: 100%;}
+   #howWeWork .text{width: 100%; background: white;}
    #howWeWork .text p{font-size:14px;}
    #howWeWork .title h2:first-child, #howWeWork .title h2:last-child{font-size: 50px;}
    #howWeWork ul{margin: 0;}

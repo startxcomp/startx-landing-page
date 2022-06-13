@@ -525,11 +525,11 @@
         <li><a href="#clients">Clients</a></li>
         <li><a href="#company">Company</a></li>
         <li><a href="#contactus">Contact Us</a></li>
-        <li><a href="#createProject">Create Project</a></li>
-        <li><a href="#myCompany">My company structure</a></li>
+        <li><a href="#createProject">Start Project</a></li>
+        <!-- <li><a href="#myCompany">My company structure</a></li>
         <li><a href="#appPage">Apply Page</a></li>
         <li><a href="#ourTechStackPage">Our tech stack page</a></li>
-        <li><a href="#philosophyPage">Philosophy page</a></li>
+        <li><a href="#philosophyPage">Philosophy page</a></li> -->
       </ul>
     </div>
   </div>
@@ -555,19 +555,19 @@
             </div>
             <div class="body">
               <div class="field">
-                <label>Your name</label>
+                <label>Your name<span>* (required)</span></label>
                 <input type="text" name="name" class="form-control" required>
               </div>
               <div class="row">
                 <div class="col-md-6">
                   <div class="field">
-                    <label>Your telephone number</label>
+                    <label>Your telephone number<span>* (required)</span></label>
                     <input type="number" name="phone" id="phone" class="form-control" required>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="field">
-                    <label>E-Mail Address</label>
+                    <label>E-Mail Address<span>* (required)</span></label>
                     <input type="mail" name="mail" class="form-control" required>
                   </div>
                 </div>
@@ -580,7 +580,7 @@
               <p>You can choose the services we can assist you at this step.</p>
             </div>
             <div class="body">
-              <label>Which services do you want to take advantage of?</label>
+              <label>Which services do you want to take advantage of? <span>(At least 1 selected)</span></label>
               <div class="checkList">
                                   <label class="checkbox">
                     <input name="services" class="form-check-input me-1" type="checkbox" value="UI Design">
@@ -611,25 +611,41 @@
             </div>
             <div class="body">
               <div class="field">
-                <label>Project Name</label>
+                <label>Project Name<span>* (required)</span></label>
                 <input type="text" name="projectName" class="form-control" required>
               </div>
               <div class="row">
                 <div class="col-md-6">
                   <div class="field">
-                    <label>How many are you in the project?</label>
-                    <input type="number" min="1" name="people" class="form-control"  required>
+                    <label>In what phase are you?<span>* (required)</span></label>
+                    <select class="form-control" name="phase" required>
+                      <option></option>
+                      <option value="College">College</option>
+                      <option value="High School">High School</option>
+                    </select>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="field">
-                    <label>What is your role</label>
-                    <input type="text" name="roles" class="form-control" required>
+                    <label>What is your role?<span>* (required)</span></label>
+                    <select class="form-control" name="roles" required>
+                      <option></option>
+                      <option>Full stack developer</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="field">
+                    <label>What is your product?<span>* (required)</span></label>
+                    <select class="form-control" name="product" required>
+                      <option></option>
+                      <option>Ecommerce platform</option>
+                    </select>
                   </div>
                 </div>
               </div>
               <div class="field">
-                <label>Tell Your Project</label>
+                <label>Tell Your Project<span>* (required)</span></label>
                 <textarea type="text" name="projectDescription" class="form-control" rows="8" required></textarea>
               </div>
             </div>
@@ -669,16 +685,35 @@
             </div>
             <div class="body">
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                   <div class="field">
                     <label>Delivery Date</label>
                     <input type="date" name="deliveryDate" class="form-control" required>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <!-- <div class="col-md-6">
                   <div class="field">
                   <label>When would you like to have a meeting?</label>
                   <input type="date" name="meetingDate" class="form-control" required>
+                  </div>
+                </div> -->
+                <div class="col-md-12">
+                  <div class="field">
+                    <label>How should we connect you?</label>
+                    <div class="contact-types">
+                      <label>
+                        <input name="email" class="form-check-input me-1" type="checkbox" value="E-mail">
+                        E-mail
+                      </label>
+                      <label>
+                        <input name="whatsapp" class="form-check-input me-1" type="checkbox" value="Whatsapp">
+                        Whatsapp
+                      </label>
+                      <label>
+                        <input name="phone-call" class="form-check-input me-1" type="checkbox" value="Phone call">
+                        Phone call
+                      </label>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -716,20 +751,28 @@
                   <p class="DATAservices"></p>
                 </div>
                 <div class="col-md-12">
-                  <h5>Number of Persons</h5>
-                  <p class="DATApeople"></p>
+                  <h5>Phases</h5>
+                  <p class="DATAphase"></p>
                 </div>
                 <div class="col-md-12">
                   <h5>Roles</h5>
                   <p class="DATAroles"></p>
                 </div>
+                <div class="col-md-12">
+                  <h5>Products</h5>
+                  <p class="DATAproduct"></p>
+                </div>
                 <div class="col-md-3">
                   <h5>Delivery Date</h5>
                   <p class="DATAdeliveryDate"></p>
                 </div>
-                <div class="col-md-3">
+                <!-- <div class="col-md-3">
                   <h5>Meeting Date</h5>
                   <p class="DATAmeetingDate"></p>
+                </div> -->
+                <div class="col-md-3">
+                  <h5>Connect Type</h5>
+                  <p class="DATAconnect-type"></p>
                 </div>
                 <div class="col-md-3">
                   <h5>Budget</h5>
@@ -792,9 +835,10 @@
     <script src="assets/js/masonry.js?v=1644831271"></script>
     <script src="assets/js/faq.js?v=1644831271"></script>
     <script src="assets/js/projects.js?v=1644831271" charset="utf-8"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.17/dist/sweetalert2.all.min.js"></script>
     <script src="assets/js/startProjectModal.js?v=1644831271" charset="utf-8"></script>
     <script src="assets/js/master.js?v=1644831271" charset="utf-8"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <section id="pageLoader" class="preloader-wrap">
   <div>
     <div>

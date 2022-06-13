@@ -56,8 +56,17 @@ $('body').on('click','#startProjectModal .next, #startProjectModal .prev', funct
       $(this).removeClass('empty');
     }
   })
-  // Input
+  // textarea
   st.find('.steps>div').eq(i).find('textarea[required]').each(function(){
+    if($(this).val().length == 0){
+      totalEmpty = totalEmpty + 1;
+      $(this).addClass('empty');
+    }else{
+      $(this).removeClass('empty');
+    }
+  })
+  // select
+  st.find('.steps>div').eq(i).find('select[required]').each(function(){
     if($(this).val().length == 0){
       totalEmpty = totalEmpty + 1;
       $(this).addClass('empty');
@@ -70,6 +79,12 @@ $('body').on('click','#startProjectModal .next, #startProjectModal .prev', funct
 
 
 
+  let checkedService = [];
+  $('.checkList .checkbox input').each(function() {
+    if ($(this).is(":checked")) {
+      checkedService.push($(this))
+    }
+  });
 
   if(totalEmpty){
     Swal.fire({
@@ -78,7 +93,13 @@ $('body').on('click','#startProjectModal .next, #startProjectModal .prev', funct
       text: 'Please fill in the blanks to proceed to the next step.',
       //footer: '<a href="">Why do I have this issue?</a>'
     })
-  }else{
+  } else if (i === 1 && checkedService.length === 0) {
+    Swal.fire({
+      icon: 'info',
+      title: 'You didn\'t select any service.',
+      text: 'You should select at least 1 service.',
+    })
+  } else{
     if(c == 'next'){
       i = i + 1;
     }else{
@@ -123,7 +144,19 @@ st.find('.send').click(function(){
     title: 'Success',
     text: 'We have received your project information, we will contact you as soon as possible.',
     //footer: '<a href="">Why do I have this issue?</a>'
-  })
+  });
+
+  Email.send({
+    Host : "mx2eb7.netcup.net",
+    Username : "<Mailtrap username>",
+    Password : "<Mailtrap password>",
+    To : 'recipient@example.com',
+    From : "sender@example.com",
+    Subject : "Test email",
+    Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
+  }).then(
+    message => alert(message)
+  );
 /*
 //  Error
 Swal.fire({
@@ -159,11 +192,13 @@ const formatToCurrency = amount => {
   return amount.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,");
 };
 //
-st.find('input,textarea').change(function(){
+st.find('input,textarea,select').change(function(){
   var t = $(this),
       n = t.attr('name'),
       v = t.val();
 
+
+      console.log(t, n, v)
   if(n=="services"){
     var v = "";
     st.find("input[name='services']").each(function(e){
@@ -175,6 +210,16 @@ st.find('input,textarea').change(function(){
     st.find('.DATA'+n).text(v);
   }else if(n=='budget'  || n == 'equity'){
 
+  }else if (n=='email' || n=='whatsapp' || n=='phone-call') {
+    if (t.is(":checked")) {
+      if (st.find('.DATAconnect-type').text() !== '') {
+        st.find('.DATAconnect-type').text((st.find('.DATAconnect-type').text() + v + ' ').replaceAll('Null', ''));
+      } else {
+        st.find('.DATAconnect-type').text(v.replaceAll('Null', '') + ' ');
+      }
+    } else {
+      st.find('.DATAconnect-type').text(st.find('.DATAconnect-type').text().replace(v + ' ', ''));
+    }
   }else{
     st.find('.DATA'+n).text(v);
   }
