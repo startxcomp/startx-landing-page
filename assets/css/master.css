@@ -10,7 +10,6 @@
 }
 
 html,body{font-family: 'Fira Sans', sans-serif;scroll-behavior: smooth;overflow-x: hidden;}
-body{ }
 .scroll{position: fixed;bottom: 30px;left:30px;background-color: white;padding: 10px 30px;}
 /* Sticky */
 .sticky {position: -webkit-sticky;position: sticky;top: 0;}
@@ -82,6 +81,7 @@ body{ }
 #howWeWork .startaproject:after{transition: ease all 1s;content: ' ';display: block;width: 2px;background-color: var(--blue);position: absolute;top:160px;left:0;right: 0;margin:auto;height:  0vh;}
 /* Projects */
 #projects{position: relative;z-index: 1;}
+#projects-link {position: absolute; top: -140px;}
 #projects .head{text-align: center;}
 #projects .head p{width: 50%;margin: auto;}
 #projects .head .links{padding-top:30px;}
@@ -125,7 +125,8 @@ body{ }
 #articles .prev{left: calc(50% - 18vw);}
 #articles .next{right: calc(50% - 18vw);}
 /* Faq */
-#faq{padding: 100px 0;}
+#faq{padding: 100px 0;position: relative;}
+#faq-link { position: absolute; top: -90px; }
 /* Accorion */
 .accordion{}
 .accordion,
@@ -155,6 +156,7 @@ body{ }
 #popup.active:after{content:' ';display: block;position: fixed;top:0;left:0;right: 0;height: 95px; background-color: white;z-index: 2;box-shadow:0 0 60px rgb(54 162 228 / 14%);}
 /* Company */
 #company{display: flex;position: relative;z-index: 1;padding-bottom: 100px;}
+#company-link { position: absolute; top: -100px; }
 #company .title{font-size: 120px;position: relative; margin-bottom: 25px;}
 #company .title h2:first-child,
 #company .title h2:last-child{display: block;font-size: 120px;margin: auto;text-align: center;}
@@ -209,8 +211,8 @@ body{ }
 #contact .links ul li a{font-size: 25px;transition: ease all 0.5s;}
 #contact .links ul li a:hover{color:Var(--yellow);}
 #contact .links ul li a.active{color:Var(--green);}
-#contact:after{animation: #contactLine 5s linear 2s infinite alternate;content:' ';display: block;position: absolute;bottom: 0;left: 0;right: 0;height: 30px;width: 200vw;background: rgb(0,161,237);background: linear-gradient(90deg, rgba(0,161,237,1) 0%, rgba(138,187,42,1) 33%, rgba(254,157,43,1) 66%, rgba(236,65,27,1) 100%);}
-@keyframes #contactLine {0%   {left:0}50% {left:-100vw;}100% {left:0vw;}}
+#contact:after{animation: contactLine 5s linear 2s infinite alternate;content:' ';display: block;position: absolute;bottom: 0;left: 0;right: 0;height: 30px;width: 200vw;background: rgb(0,161,237);background: linear-gradient(90deg, rgba(0,161,237,1) 0%, rgba(138,187,42,1) 33%, rgba(254,157,43,1) 66%, rgba(236,65,27,1) 100%);}
+@keyframes contactLine {0%   {left:0}50% {left:-100vw;}100% {left:0vw;}}
 #pageLoader{position: fixed;top:0;bottom: 0;left:0;right: 0;background-color: white;z-index: 99999999;}
 #pageLoader>div{display: table;width: 100%;height: 100%;}
 #pageLoader>div>div{display: table-cell;vertical-align: middle;text-align: center;}
@@ -262,6 +264,7 @@ body{ }
 
 /* Services */
 #services{overflow: hidden;position: relative;z-index: 99;}
+#services-link {position: absolute; top: -150px;}
 #services .title{font-size: 120px;position: relative;left: -8%;}
 #services .title h2:first-child,
 #services .title h2:last-child{display: block;font-size: 120px;margin: auto;text-align: center;}
