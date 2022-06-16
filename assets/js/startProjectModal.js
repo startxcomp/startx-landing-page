@@ -230,20 +230,23 @@ function handleInputChange(e) {
   if (e.target.type !== 'range') {
     target = document.getElementById('range')
   }
-  const min = target.min
-  const max = target.max
-  const val = target.value
-  const name = target.name
 
-  target.classList.remove("empty")
-
-
-  target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%';
-  $("#"+name+"Result span").text(val.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1."));
-  if(name == 'budget'){
-    $(".DATAbudget").text('€'+val.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1."));
-  }else{
-    $(".DATAequity").text('%'+val);
+  if (target) {
+    const min = target.min
+    const max = target.max
+    const val = target.value
+    const name = target.name
+  
+    target.classList.remove("empty")
+  
+  
+    target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%';
+    $("#"+name+"Result span").text(val.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1."));
+    if(name == 'budget'){
+      $(".DATAbudget").text('€'+val.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1."));
+    }else{
+      $(".DATAequity").text('%'+val);
+    }
   }
 
 
