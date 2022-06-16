@@ -146,17 +146,9 @@ st.find('.send').click(function(){
     //footer: '<a href="">Why do I have this issue?</a>'
   });
 
-  Email.send({
-    Host : "mx2eb7.netcup.net",
-    Username : "<Mailtrap username>",
-    Password : "<Mailtrap password>",
-    To : 'recipient@example.com',
-    From : "sender@example.com",
-    Subject : "Test email",
-    Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
-  }).then(
-    message => alert(message)
-  );
+  $.post('http://127.0.0.1:8080/send', $('#startProjectModal form').serialize(), function(res) {
+    console.log(res);
+  });
 /*
 //  Error
 Swal.fire({
