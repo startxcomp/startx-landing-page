@@ -331,7 +331,7 @@ input[type=range]::-webkit-slider-runnable-track,input[type=range]::-moz-range-t
    #welcome .bgImage .right{max-height: 25%; top: 50px;}
    #welcome .bgImage .left{max-height:30%; top: 50px;}
    #welcome .bgImage .bottom{max-height:30px;}
-   #welcome .ripple{width: 400px;position: absolute;left: 0;right: 0;}
+   #welcome .ripple{position: absolute;left: 0;right: 0;}
    #welcome .ripple::before, #welcome .ripple::after {width: 400px;height: 400px;margin: auto;}
    #welcome .body{padding-top:40%;}
    #services .swiper-button-next{padding-right: 5%;}
