@@ -15,7 +15,7 @@ html,body{font-family: 'Fira Sans', sans-serif;scroll-behavior: smooth;overflow-
 .sticky {position: -webkit-sticky;position: sticky;top: 0;}
 /* Fixed Menu */
 #menu{position: fixed;top:0;left:0;right: 0;padding:  30px 30px 30px 30px;transition: ease all 0.5s;text-align: center;z-index: 9999;}
-#menu .logo{display: inline-block;float:left;margin-top: -15px;}
+#menu .logo{display: inline-block; margin-top: -15px;}
 #menu .logo svg{height: 79px;}
 #menu .menu,
 #menu .menu li{list-style: none;margin: 0;padding: 0;display: inline-block;}
@@ -128,7 +128,6 @@ html,body{font-family: 'Fira Sans', sans-serif;scroll-behavior: smooth;overflow-
 #faq{padding: 100px 0;position: relative;}
 #faq-link { position: absolute; top: -90px; }
 /* Accorion */
-.accordion{}
 .accordion,
 .accordion li{margin:0;list-style:none;padding:0;}
 .accordion li{border-bottom:1px solid #eee;padding-bottom: 15px;position: relative;}
@@ -162,7 +161,6 @@ html,body{font-family: 'Fira Sans', sans-serif;scroll-behavior: smooth;overflow-
 #company .title h2:last-child{display: block;font-size: 120px;margin: auto;text-align: center;}
 #company .title h2:first-child{ opacity: 0.2;left: 0vw;color:white;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;}
 #company .title h2:last-child{left: 0vw;position: absolute;top:0;}
-#company .links{}
 #company .links a{text-decoration: none;display: inline-block;padding: 10px 20px;}
 #company .links a{ color:black;}
 #company .links a:first-child{background-color: black;color:white;}
@@ -271,7 +269,6 @@ html,body{font-family: 'Fira Sans', sans-serif;scroll-behavior: smooth;overflow-
 #services .title h2:first-child{ opacity: 0.2;right:0;color:white;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;}
 #services .title h2:last-child{left: 0vw;position: absolute;top:0;}
 #services .line{height:100%;position:absolute;left:0;top:0;bottom:0;right:0;margin:auto;background-color:#00A1ED;width:2px;transition:ease all 1.3s;}
-#services .slider{ }
 #services .swiper-slide {transform: scale(0.6);opacity: 0.1;border: solid 2px red;overflow: hidden;border-radius: 15px;padding:50px 30px;text-align: center;  background: white;align-items: center;justify-content:center;transition:all 500ms ease;position: relative;}
 #services .swiper-slide .content{position: relative;z-index: 10;}
 #services .swiper-slide .content .image{position: relative;}
